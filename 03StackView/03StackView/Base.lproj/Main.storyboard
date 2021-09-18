@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="wCX-Lo-rZf">
-                                <rect key="frame" x="20" y="44" width="374" height="220"/>
+                                <rect key="frame" x="20" y="64" width="374" height="220"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="UserName" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hzO-f1-2RC">
                                         <rect key="frame" x="0.0" y="0.0" width="374" height="40"/>
@@ -106,7 +106,9 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="wCX-Lo-rZf" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="YqN-CP-oik"/>
+                            <constraint firstItem="wCX-Lo-rZf" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="YqN-CP-oik">
+                                <variation key="heightClass=compact" constant="80"/>
+                            </constraint>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="wCX-Lo-rZf" secondAttribute="trailing" constant="20" id="muC-qu-Qdt"/>
                             <constraint firstItem="wCX-Lo-rZf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="vEE-7D-gkg"/>
                         </constraints>
