@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -20,6 +20,11 @@
 		222380A126FEBE31006A7DB9 /* SettingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2223809F26FEBE31006A7DB9 /* SettingTableViewCell.swift */; };
 		222380A226FEBE31006A7DB9 /* SettingTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 222380A026FEBE31006A7DB9 /* SettingTableViewCell.xib */; };
 		222380A526FEBF93006A7DB9 /* Setting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222380A426FEBF93006A7DB9 /* Setting.swift */; };
+		222380A926FEC337006A7DB9 /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222380A726FEC337006A7DB9 /* AccountViewController.swift */; };
+		222380AA26FEC337006A7DB9 /* AccountViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 222380A826FEC337006A7DB9 /* AccountViewController.xib */; };
+		222380AE26FEC4BF006A7DB9 /* GeneralViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222380AC26FEC4BF006A7DB9 /* GeneralViewController.swift */; };
+		222380AF26FEC4BF006A7DB9 /* GeneralViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 222380AD26FEC4BF006A7DB9 /* GeneralViewController.xib */; };
+		222380B226FECAAD006A7DB9 /* FSCalendar in Frameworks */ = {isa = PBXBuildFile; productRef = 222380B126FECAAD006A7DB9 /* FSCalendar */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +64,10 @@
 		2223809F26FEBE31006A7DB9 /* SettingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingTableViewCell.swift; sourceTree = "<group>"; };
 		222380A026FEBE31006A7DB9 /* SettingTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingTableViewCell.xib; sourceTree = "<group>"; };
 		222380A426FEBF93006A7DB9 /* Setting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Setting.swift; sourceTree = "<group>"; };
+		222380A726FEC337006A7DB9 /* AccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
+		222380A826FEC337006A7DB9 /* AccountViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AccountViewController.xib; sourceTree = "<group>"; };
+		222380AC26FEC4BF006A7DB9 /* GeneralViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralViewController.swift; sourceTree = "<group>"; };
+		222380AD26FEC4BF006A7DB9 /* GeneralViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GeneralViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +75,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				222380B226FECAAD006A7DB9 /* FSCalendar in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -109,6 +119,8 @@
 		2223806926FEB001006A7DB9 /* 05SimpleTable */ = {
 			isa = PBXGroup;
 			children = (
+				222380AB26FEC4AD006A7DB9 /* General */,
+				222380A626FEC309006A7DB9 /* AccountScreen */,
 				222380A326FEBF81006A7DB9 /* Model */,
 				2223809A26FEB57D006A7DB9 /* Cells */,
 				2223806A26FEB001006A7DB9 /* AppDelegate.swift */,
@@ -159,6 +171,24 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		222380A626FEC309006A7DB9 /* AccountScreen */ = {
+			isa = PBXGroup;
+			children = (
+				222380A726FEC337006A7DB9 /* AccountViewController.swift */,
+				222380A826FEC337006A7DB9 /* AccountViewController.xib */,
+			);
+			path = AccountScreen;
+			sourceTree = "<group>";
+		};
+		222380AB26FEC4AD006A7DB9 /* General */ = {
+			isa = PBXGroup;
+			children = (
+				222380AC26FEC4BF006A7DB9 /* GeneralViewController.swift */,
+				222380AD26FEC4BF006A7DB9 /* GeneralViewController.xib */,
+			);
+			path = General;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -175,6 +205,9 @@
 			dependencies = (
 			);
 			name = 05SimpleTable;
+			packageProductDependencies = (
+				222380B126FECAAD006A7DB9 /* FSCalendar */,
+			);
 			productName = 05SimpleTable;
 			productReference = 2223806726FEB001006A7DB9 /* 05SimpleTable.app */;
 			productType = "com.apple.product-type.application";
@@ -246,6 +279,9 @@
 				Base,
 			);
 			mainGroup = 2223805E26FEB001006A7DB9;
+			packageReferences = (
+				222380B026FECAAD006A7DB9 /* XCRemoteSwiftPackageReference "FSCalendar" */,
+			);
 			productRefGroup = 2223806826FEB001006A7DB9 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -266,6 +302,8 @@
 				2223807726FEB008006A7DB9 /* LaunchScreen.storyboard in Resources */,
 				2223807426FEB008006A7DB9 /* Assets.xcassets in Resources */,
 				222380A226FEBE31006A7DB9 /* SettingTableViewCell.xib in Resources */,
+				222380AF26FEC4BF006A7DB9 /* GeneralViewController.xib in Resources */,
+				222380AA26FEC337006A7DB9 /* AccountViewController.xib in Resources */,
 				2223807226FEB001006A7DB9 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -293,6 +331,8 @@
 			files = (
 				2223809D26FEB59B006A7DB9 /* UserTableViewCell.swift in Sources */,
 				222380A126FEBE31006A7DB9 /* SettingTableViewCell.swift in Sources */,
+				222380A926FEC337006A7DB9 /* AccountViewController.swift in Sources */,
+				222380AE26FEC4BF006A7DB9 /* GeneralViewController.swift in Sources */,
 				222380A526FEBF93006A7DB9 /* Setting.swift in Sources */,
 				2223806F26FEB001006A7DB9 /* ViewController.swift in Sources */,
 				2223806B26FEB001006A7DB9 /* AppDelegate.swift in Sources */,
@@ -623,6 +663,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		222380B026FECAAD006A7DB9 /* XCRemoteSwiftPackageReference "FSCalendar" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/WenchaoD/FSCalendar.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.8.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		222380B126FECAAD006A7DB9 /* FSCalendar */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 222380B026FECAAD006A7DB9 /* XCRemoteSwiftPackageReference "FSCalendar" */;
+			productName = FSCalendar;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 2223805F26FEB001006A7DB9 /* Project object */;
 }

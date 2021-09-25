@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+class ViewController: UIViewController {
     @IBOutlet weak var sampleTableView: UITableView!
     private var dataSource: [Setting] = []
     
@@ -21,11 +21,16 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         // 1. tao cell
         // 2. dang ky cell cho tableview
         // 3. dinh nghia o datasource
+        // 4. Xu ly delegate
+        initTableView()
+        bindModel()
+    }
+    
+    private func initTableView() {
         self.sampleTableView.register(UINib(nibName: "UserTableViewCell", bundle: nil), forCellReuseIdentifier: "UserTableViewCell")
         self.sampleTableView.register(UINib(nibName: "SettingTableViewCell", bundle: nil), forCellReuseIdentifier: "SettingTableViewCell")
         self.sampleTableView.dataSource = self
         self.sampleTableView.delegate = self
-        bindModel()
     }
     
     private func bindModel() {
@@ -36,7 +41,10 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         dataSource.append(setting2)
         dataSource.append(setting3)
     }
-    
+}
+
+
+extension ViewController: UITableViewDataSource, UITableViewDelegate {
     func numberOfSections(in tableView: UITableView) -> Int {
         5
     }
@@ -84,5 +92,15 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
         return .leastNormalMagnitude
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if indexPath.section == 0 {
+            // Section cho phan account
+            let accountViewController = AccountViewController(nibName: "AccountViewController", bundle: nil)
+            self.present(accountViewController, animated: true, completion: nil)
+        } else if indexPath.section == 1 {
+            let generalViewController = GeneralViewController(nibName: "GeneralViewController", bundle: nil)
+            self.navigationController?.pushViewController(generalViewController, animated: true)
+        }
+    }
 }
-
