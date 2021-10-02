@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -15,6 +15,23 @@
 		225927DC26F56D380040E57D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 225927DA26F56D380040E57D /* LaunchScreen.storyboard */; };
 		225927E726F5769C0040E57D /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 225927E526F5769C0040E57D /* LoginViewController.swift */; };
 		225927E826F5769C0040E57D /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 225927E626F5769C0040E57D /* LoginViewController.xib */; };
+		22843A4B2707EB850048305E /* NetworkProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22843A472707EB850048305E /* NetworkProvider.swift */; };
+		22843A4C2707EB850048305E /* BaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22843A482707EB850048305E /* BaseService.swift */; };
+		22843A4D2707EB850048305E /* Configs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22843A492707EB850048305E /* Configs.swift */; };
+		22843A4E2707EB850048305E /* BaseError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22843A4A2707EB850048305E /* BaseError.swift */; };
+		22843A512707ED070048305E /* AuthenAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22843A502707ED070048305E /* AuthenAPI.swift */; };
+		22843A542707EE410048305E /* AuthenService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22843A532707EE410048305E /* AuthenService.swift */; };
+		22843A572707EE900048305E /* LoginResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22843A562707EE900048305E /* LoginResponse.swift */; };
+		22843A5A2707F8FD0048305E /* LoginResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = 22843A592707F8FD0048305E /* LoginResponse.json */; };
+		22843A5C2707F9E40048305E /* RegisterResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = 22843A5B2707F9E40048305E /* RegisterResponse.json */; };
+		22843A5F2707FACA0048305E /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22843A5D2707FACA0048305E /* RegisterViewController.swift */; };
+		22843A602707FACA0048305E /* RegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 22843A5E2707FACA0048305E /* RegisterViewController.xib */; };
+		22843A642707FAE70048305E /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22843A632707FAE70048305E /* Utils.swift */; };
+		22843A662707FB710048305E /* BookAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22843A652707FB710048305E /* BookAPI.swift */; };
+		22843A692707FC240048305E /* GetBookResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = 22843A682707FC240048305E /* GetBookResponse.json */; };
+		22843A6B2707FC410048305E /* BookResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22843A6A2707FC410048305E /* BookResponse.swift */; };
+		22843A6D2707FCAA0048305E /* BookService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22843A6C2707FCAA0048305E /* BookService.swift */; };
+		FEC99A682F9C29162436EB8C /* Pods_02AlertView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54C45057B14E8A12E846B107 /* Pods_02AlertView.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +45,25 @@
 		225927DD26F56D380040E57D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		225927E526F5769C0040E57D /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		225927E626F5769C0040E57D /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		22843A472707EB850048305E /* NetworkProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkProvider.swift; sourceTree = "<group>"; };
+		22843A482707EB850048305E /* BaseService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseService.swift; sourceTree = "<group>"; };
+		22843A492707EB850048305E /* Configs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Configs.swift; sourceTree = "<group>"; };
+		22843A4A2707EB850048305E /* BaseError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseError.swift; sourceTree = "<group>"; };
+		22843A502707ED070048305E /* AuthenAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenAPI.swift; sourceTree = "<group>"; };
+		22843A532707EE410048305E /* AuthenService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenService.swift; sourceTree = "<group>"; };
+		22843A562707EE900048305E /* LoginResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginResponse.swift; sourceTree = "<group>"; };
+		22843A592707F8FD0048305E /* LoginResponse.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = LoginResponse.json; sourceTree = "<group>"; };
+		22843A5B2707F9E40048305E /* RegisterResponse.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = RegisterResponse.json; sourceTree = "<group>"; };
+		22843A5D2707FACA0048305E /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		22843A5E2707FACA0048305E /* RegisterViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RegisterViewController.xib; sourceTree = "<group>"; };
+		22843A632707FAE70048305E /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		22843A652707FB710048305E /* BookAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookAPI.swift; sourceTree = "<group>"; };
+		22843A682707FC240048305E /* GetBookResponse.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = GetBookResponse.json; sourceTree = "<group>"; };
+		22843A6A2707FC410048305E /* BookResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookResponse.swift; sourceTree = "<group>"; };
+		22843A6C2707FCAA0048305E /* BookService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookService.swift; sourceTree = "<group>"; };
+		54C45057B14E8A12E846B107 /* Pods_02AlertView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_02AlertView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7E4632AF46996C2716FF4F0E /* Pods-02AlertView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-02AlertView.debug.xcconfig"; path = "Target Support Files/Pods-02AlertView/Pods-02AlertView.debug.xcconfig"; sourceTree = "<group>"; };
+		A5846733C9230636911C3DF8 /* Pods-02AlertView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-02AlertView.release.xcconfig"; path = "Target Support Files/Pods-02AlertView/Pods-02AlertView.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +71,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FEC99A682F9C29162436EB8C /* Pods_02AlertView.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -46,6 +83,8 @@
 			children = (
 				225927CE26F56D370040E57D /* 02AlertView */,
 				225927CD26F56D370040E57D /* Products */,
+				F4201515113EE6090AAD2827 /* Pods */,
+				93E07161C8C7F235AD2D2947 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,6 +99,8 @@
 		225927CE26F56D370040E57D /* 02AlertView */ = {
 			isa = PBXGroup;
 			children = (
+				22843A622707FADF0048305E /* Utils */,
+				22843A462707EB850048305E /* Network */,
 				225927E326F576420040E57D /* Modules */,
 				225927CF26F56D370040E57D /* AppDelegate.swift */,
 				225927D126F56D370040E57D /* SceneDelegate.swift */,
@@ -75,6 +116,7 @@
 		225927E326F576420040E57D /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				22843A612707FAD40048305E /* Register */,
 				225927E426F5764E0040E57D /* Login */,
 			);
 			path = Modules;
@@ -89,6 +131,100 @@
 			path = Login;
 			sourceTree = "<group>";
 		};
+		22843A462707EB850048305E /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				22843A582707F8E80048305E /* TestReponse */,
+				22843A552707EE850048305E /* Responses */,
+				22843A522707EE2E0048305E /* Services */,
+				22843A4F2707ECF30048305E /* APIs */,
+				22843A472707EB850048305E /* NetworkProvider.swift */,
+				22843A482707EB850048305E /* BaseService.swift */,
+				22843A492707EB850048305E /* Configs.swift */,
+				22843A4A2707EB850048305E /* BaseError.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		22843A4F2707ECF30048305E /* APIs */ = {
+			isa = PBXGroup;
+			children = (
+				22843A502707ED070048305E /* AuthenAPI.swift */,
+				22843A652707FB710048305E /* BookAPI.swift */,
+			);
+			path = APIs;
+			sourceTree = "<group>";
+		};
+		22843A522707EE2E0048305E /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				22843A532707EE410048305E /* AuthenService.swift */,
+				22843A6C2707FCAA0048305E /* BookService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		22843A552707EE850048305E /* Responses */ = {
+			isa = PBXGroup;
+			children = (
+				22843A562707EE900048305E /* LoginResponse.swift */,
+				22843A6A2707FC410048305E /* BookResponse.swift */,
+			);
+			path = Responses;
+			sourceTree = "<group>";
+		};
+		22843A582707F8E80048305E /* TestReponse */ = {
+			isa = PBXGroup;
+			children = (
+				22843A672707FC150048305E /* Books */,
+				22843A592707F8FD0048305E /* LoginResponse.json */,
+				22843A5B2707F9E40048305E /* RegisterResponse.json */,
+			);
+			path = TestReponse;
+			sourceTree = "<group>";
+		};
+		22843A612707FAD40048305E /* Register */ = {
+			isa = PBXGroup;
+			children = (
+				22843A5D2707FACA0048305E /* RegisterViewController.swift */,
+				22843A5E2707FACA0048305E /* RegisterViewController.xib */,
+			);
+			path = Register;
+			sourceTree = "<group>";
+		};
+		22843A622707FADF0048305E /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				22843A632707FAE70048305E /* Utils.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		22843A672707FC150048305E /* Books */ = {
+			isa = PBXGroup;
+			children = (
+				22843A682707FC240048305E /* GetBookResponse.json */,
+			);
+			path = Books;
+			sourceTree = "<group>";
+		};
+		93E07161C8C7F235AD2D2947 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				54C45057B14E8A12E846B107 /* Pods_02AlertView.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F4201515113EE6090AAD2827 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7E4632AF46996C2716FF4F0E /* Pods-02AlertView.debug.xcconfig */,
+				A5846733C9230636911C3DF8 /* Pods-02AlertView.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -96,9 +232,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 225927E026F56D380040E57D /* Build configuration list for PBXNativeTarget "02AlertView" */;
 			buildPhases = (
+				A039E1585ED12682315AB7CE /* [CP] Check Pods Manifest.lock */,
 				225927C826F56D370040E57D /* Sources */,
 				225927C926F56D370040E57D /* Frameworks */,
 				225927CA26F56D370040E57D /* Resources */,
+				44E7017E9A424BC3FA958B98 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -148,12 +286,58 @@
 			files = (
 				225927E826F5769C0040E57D /* LoginViewController.xib in Resources */,
 				225927DC26F56D380040E57D /* LaunchScreen.storyboard in Resources */,
+				22843A602707FACA0048305E /* RegisterViewController.xib in Resources */,
+				22843A5A2707F8FD0048305E /* LoginResponse.json in Resources */,
+				22843A5C2707F9E40048305E /* RegisterResponse.json in Resources */,
 				225927D926F56D380040E57D /* Assets.xcassets in Resources */,
+				22843A692707FC240048305E /* GetBookResponse.json in Resources */,
 				225927D726F56D370040E57D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		44E7017E9A424BC3FA958B98 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-02AlertView/Pods-02AlertView-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-02AlertView/Pods-02AlertView-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-02AlertView/Pods-02AlertView-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A039E1585ED12682315AB7CE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-02AlertView-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		225927C826F56D370040E57D /* Sources */ = {
@@ -161,9 +345,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				225927E726F5769C0040E57D /* LoginViewController.swift in Sources */,
+				22843A662707FB710048305E /* BookAPI.swift in Sources */,
 				225927D426F56D370040E57D /* ViewController.swift in Sources */,
+				22843A512707ED070048305E /* AuthenAPI.swift in Sources */,
+				22843A5F2707FACA0048305E /* RegisterViewController.swift in Sources */,
+				22843A4C2707EB850048305E /* BaseService.swift in Sources */,
+				22843A642707FAE70048305E /* Utils.swift in Sources */,
+				22843A542707EE410048305E /* AuthenService.swift in Sources */,
+				22843A6D2707FCAA0048305E /* BookService.swift in Sources */,
 				225927D026F56D370040E57D /* AppDelegate.swift in Sources */,
 				225927D226F56D370040E57D /* SceneDelegate.swift in Sources */,
+				22843A4B2707EB850048305E /* NetworkProvider.swift in Sources */,
+				22843A6B2707FC410048305E /* BookResponse.swift in Sources */,
+				22843A4D2707EB850048305E /* Configs.swift in Sources */,
+				22843A572707EE900048305E /* LoginResponse.swift in Sources */,
+				22843A4E2707EB850048305E /* BaseError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -307,6 +503,7 @@
 		};
 		225927E126F56D380040E57D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7E4632AF46996C2716FF4F0E /* Pods-02AlertView.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -325,6 +522,7 @@
 		};
 		225927E226F56D380040E57D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A5846733C9230636911C3DF8 /* Pods-02AlertView.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

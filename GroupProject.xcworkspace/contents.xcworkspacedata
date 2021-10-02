@@ -2,6 +2,12 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:02AlertView/02AlertView.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:05SimpleTable/05SimpleTable.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:HelloWorld/HelloWorld.xcodeproj">
    </FileRef>
    <FileRef
@@ -9,8 +15,5 @@
    </FileRef>
    <FileRef
       location = "group:03StackView/03StackView.xcodeproj">
-   </FileRef>
-   <FileRef
-      location = "group:02AlertView/02AlertView.xcodeproj">
    </FileRef>
 </Workspace>

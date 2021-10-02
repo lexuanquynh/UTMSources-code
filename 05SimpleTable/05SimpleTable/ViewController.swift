@@ -11,6 +11,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var sampleTableView: UITableView!
     private var dataSource: [Setting] = []
     
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -99,8 +101,34 @@ extension ViewController: UITableViewDataSource, UITableViewDelegate {
             let accountViewController = AccountViewController(nibName: "AccountViewController", bundle: nil)
             self.present(accountViewController, animated: true, completion: nil)
         } else if indexPath.section == 1 {
-            let generalViewController = GeneralViewController(nibName: "GeneralViewController", bundle: nil)
-            self.navigationController?.pushViewController(generalViewController, animated: true)
+            if indexPath.row == 2 {
+                // show alert
+                // Add Call action
+                let optionMenu = UIAlertController(title: nil, message: "What do you want to do?", preferredStyle: .actionSheet)
+                let cancelAction = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
+                
+                let callActionHandler = { (action:UIAlertAction!) -> Void in
+                    let alertMessage = UIAlertController(title: "Service Unavailable", message: "Sorry, the call feature is not available yet. Please retry later.", preferredStyle: .alert)
+                    alertMessage.addAction(UIAlertAction(title: "OK", style: .default, handler: nil ))
+                    self.present(alertMessage, animated: true, completion: nil)
+                }
+                // closure
+                let callAction = UIAlertAction(title: "Call " + "123-000-\(indexPath.row)", style: .default, handler: callActionHandler)
+                optionMenu.addAction(callAction)
+                optionMenu.addAction(cancelAction)
+                
+                // Check-in action
+                let checkInAction = UIAlertAction(title: "Check in", style: .default, handler: { (action:UIAlertAction!) -> Void in
+                    let cell = tableView.cellForRow(at: indexPath)
+                    cell?.accessoryType = .checkmark
+                })
+                optionMenu.addAction(checkInAction)
+                
+                self.present(optionMenu, animated: true, completion: nil)
+            } else {
+                let generalViewController = GeneralViewController(nibName: "GeneralViewController", bundle: nil)
+                self.navigationController?.pushViewController(generalViewController, animated: true)
+            }
         }
     }
 }
